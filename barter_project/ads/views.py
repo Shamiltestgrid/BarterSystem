@@ -1,7 +1,6 @@
 from django.shortcuts import render, redirect
-from barter_project.ads.forms import AdForm
+from .forms import AdForm
 from django.contrib.auth.decorators import login_required
-
 
 # Create your views here.
 
@@ -26,4 +25,3 @@ def create_ad(request):
 
 def ad_success(request):
     return render(request, 'ads/success.html')
-
